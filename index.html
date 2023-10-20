@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Man's Depression</title>
+    <link rel="stylesheet" href="asset/styles.css">
+
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <section class="title">
+            <h1>Man's Depression</h1>
+        <nav>
+            <ul class="horizontal-list">
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#merch">Merch</a></li>
+                <li><a href="#therapist">Connect with a Therapist</a></li>
+            </ul>
+        </nav>
+    </section>
+    </header>
+
+    <!-- Articles Section with Comments and Likes -->
+    <h2>Articles</h2>
+    <section id="articles">
+        
+        <article>
+            <div class="article-item1" id="article1">
+                <h3>Understanding the Silent Struggle: <br> Men and Drepression</h3>
+                <a href="#" class="read-more-link">READ MORE...</a>
+</div>
+                <button class="share-button">Share</button>
+                <div class="likes">
+                    <button>Comment</button><button>Like</button> <span>0 likes</span>
+                </div>
+            </div>
+       
+            <div class="article-item2" id="article2">
+                <h3>Destructive Coping: <br> 10 Unhealthy Ways Men Deal with Heartbreak</h3>
+                
+                <a href="#" class="read-more-link">READ MORE...</a>
+</div>
+                <button class="share-button">Share</button>
+                <div class="likes">
+                    <button>Comment</button><button>Like</button> <span>0 likes</span>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <div class="article-item3" id="article3">
+                <h3>Healing Hearts: <br> 10 Healthy Coping Strategies for Men Dealing with Heartbreak</h3>
+              
+                <a href="#" class="read-more-link">READ MORE...</a>
+</div>
+                <button class="share-button">Share</button>
+                <div class="likes">
+                    <button>Comment</button><button>Like</button> <span>0 likes</span>
+                </div>
+            </div>
+       
+            <div class="article-item4" id="article4">
+                <h3>The Silent Struggle: <br> Why Men Suffer from Depression in Silence</h3>
+                
+                <a href="#" class="read-more-link">READ MORE...</a>
+</div>
+                <button class="share-button">Share</button>
+                <div class="likes">
+                    <button>Comment</button><button>Like</button> <span>0 likes</span>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <div class="article-item5" id="article5">
+                <h3>Navigating the Path to Love: <br> Finding the Right Partner</h3>
+                
+                <a href="#" class="read-more-link">READ MORE...</a>
+</div>
+                <button class="share-button">Share</button>
+                <div class="likes">
+                    <button>Comment</button><button>Like</button> <span>0 likes</span>
+                </div>
+            </div>
+       
+            <div class="article-item6" id="article6">
+                <h3>The Quest for Meaning: <br> A Man's Journey to Finding His Purpose</h3>
+                
+                <a href="#" class="read-more-link">READ MORE...</a>
+</div>
+                <button class="share-button">Share</button>
+                <div class="likes">
+                    <button>Comment</button><button>Like</button> <span>0 likes</span>
+                </div>
+            </div>
+        </article>
+        <!-- More articles can be added similarly -->
+    </section>
+
+    <!-- Merch Section -->
+    <section id="merch">
+        <h2>Merchandise</h2>
+        <p>Explore our exclusive merchandise collection.</p>
+        <!-- Merchandise items and purchase options go here -->
+    </section>
+
+    <!-- Connect with a Therapist Section -->
+    <section id="therapist">
+        <h2>Connect with a Therapist</h2>
+        <p>Find the support you need with our experienced therapists.</p>
+        <!-- Therapist profiles and contact information go here -->
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 My Blog. All rights reserved.</p>
+    </footer>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var readMoreLinks = document.querySelectorAll('.read-more-link');
+
+        readMoreLinks.forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent the default behavior of the link
+                var content = this.previousElementSibling; // Get the content paragraph
+                content.style.display = (content.style.display === 'none' || content.style.display === '') ? 'block' : 'none';
+                this.innerText = (content.style.display === 'none') ? 'Read More' : 'Read Less';
+            });
+        });
+    });
+</script>
+</html>
